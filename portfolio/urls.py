@@ -18,6 +18,10 @@ urlpatterns = [
     url(r'^investment/(?P<pk>\d+)/edit/$', views.investment_edit, name='investment_edit'),
     url(r'^investment/create/$', views.investment_new, name='investment_new'),
     url(r'^customers_json/', views.CustomerList.as_view()),
+    url(r'^mutualFund/$', views.mutualFund_list, name='mutualFund_list'),
+    url(r'^mutualFund/(?P<pk>\d+)/delete/$', views.mutualFund_delete, name='mutualFund_delete'),
+    url(r'^mutualFund/(?P<pk>\d+)/edit/$', views.mutualFund_edit, name='mutualFund_edit'),
+    url(r'^mutualFund/create/$', views.mutualFund_new, name='mutualFund_new'),
 
 ]
 

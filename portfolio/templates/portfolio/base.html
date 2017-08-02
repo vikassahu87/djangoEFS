@@ -72,6 +72,7 @@
                 <li><a href="{% url 'portfolio:customer_list' %}">Customers</a></li>
                 <li><a href="{% url 'portfolio:investment_list' %}">Investments</a></li>
                 <li><a href="{% url 'portfolio:stock_list' %}">Stocks</a></li>
+                <li><a href="{% url 'portfolio:mutualFund_list' %}">Mutual Funds</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
@@ -133,6 +134,18 @@
                                     <h2>Stock Portfolio</h2>
                                     <p>Our Stock portfolios vary across industries.</p>
                                     <p><a class="btn btn-default" href="{% url 'portfolio:stock_list' %}" role="button">View
+                                        details &raquo;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="{% static "images/mutualfunds.jpg" %}" alt="mutualfunds"/>
+                                <div class="caption">
+                                    <h2>Mutual Funds</h2>
+                                    <p>Our team also provides advises for Mutual Funds.</p>
+                                    <p><a class="btn btn-default" href="{% url 'portfolio:mutualFund_list' %}"
+                                          role="button">View
                                         details &raquo;</a></p>
                                 </div>
                             </div>
